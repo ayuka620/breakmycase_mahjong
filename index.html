@@ -634,7 +634,7 @@ let toastTimer;
 function showToast(msg){
   const el=document.getElementById('toast');
   el.textContent=msg;el.classList.add('show');
-  clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2800);
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2500);
 }
 function mkEl(tag,cls){const e=document.createElement(tag);e.className=cls;return e;}
 </script>
