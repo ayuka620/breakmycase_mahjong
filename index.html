@@ -439,8 +439,7 @@ socket.on('tile_discarded',({player,tileId,discards,handCounts})=>{
 
 socket.on('turn_changed',({currentTurn})=>{
   updateTurnIndicator(currentTurn);
-
-  else playVoice('oppturn');
+  if(currentTurn!==myIndex) playVoice('oppturn');
 });
 
 socket.on('action_called',({player,action,handCounts})=>{
