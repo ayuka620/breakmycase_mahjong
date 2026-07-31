@@ -1,4 +1,4 @@
-const VOICE_FILES = {};
+var VOICE_FILES = VOICE_FILES || {};
 const VOICE_SCENES = {
   "enter":   ["v00","v01","v21"],
   "discard": ["v02","v03","v04","v05"],
